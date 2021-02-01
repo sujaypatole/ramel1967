@@ -68,10 +68,23 @@
                 });
             }
 
-            table.appendRows(tableData);
+            // table.appendRows(tableData);
+            // add the data
+            chunkData(table, tableData);
             doneCallback();
         });
     };
+
+    // add the data in manageable chunks
+    function chunkData(table, tableData){
+       var row_index = 0;
+       var size = 100;
+       while (row_index < tableData.length){
+            table.appendRows(tableData.slice(row_index, size + row_index));
+            row_index += size;
+            tableau.reportProgress("Getting row: " + row_index);
+        }
+    }
 
     tableau.registerConnector(myConnector);
 
