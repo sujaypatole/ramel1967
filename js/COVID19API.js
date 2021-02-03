@@ -31,7 +31,6 @@
         }, {
             id: "new_recovered_percentage",
             dataType: tableau.dataTypeEnum.float
-            }
         }];
 
         var tableSchema = {
