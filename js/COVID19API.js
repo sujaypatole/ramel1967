@@ -45,7 +45,8 @@
     myConnector.getData = function(table, doneCallback) {
         //$.getJSON("https://search.worldbank.org/api/v2/projects?format=json&fl=regionname,countryname,location,projectfinancialtype&source=IBRD&rows=10", function(resp) {
         $.getJSON("https://covid19-api.org/api/diff", function(resp) {
-            var feat = resp.data,
+            // var feat = resp.data,
+            var feat = resp,
                 tableData = [];
 
             // Iterate over the JSON object
