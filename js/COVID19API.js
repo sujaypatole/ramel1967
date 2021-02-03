@@ -14,13 +14,13 @@
         }, {
             id: "new_cases",
             alias: "new_cases",
-            dataType: tableau.dataTypeEnum.integer
+            dataType: tableau.dataTypeEnum.int
         }, {
             id: "new_deaths",
-            dataType: tableau.dataTypeEnum.integer
+            dataType: tableau.dataTypeEnum.int
         }, {
             id: "new_recovered",
-            dataType: tableau.dataTypeEnum.integer
+            dataType: tableau.dataTypeEnum.int
         }, {
             id: "new_cases_percentage",
             dataType: tableau.dataTypeEnum.float
