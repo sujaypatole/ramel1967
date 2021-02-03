@@ -32,7 +32,7 @@
     // Download the data
     myConnector.getData = function(table, doneCallback) {
         $.getJSON("https://search.worldbank.org/api/v2/projects?format=json&fl=regionname,countryname,location,projectfinancialtype&source=IBRD&rows=10", function(resp) {
-            var feat = resp.features,
+            var feat = resp.projects,
                 tableData = [];
 
             // Iterate over the JSON object
