@@ -27,7 +27,6 @@
         }, {
             id: "new_deaths_percentage",
             dataType: tableau.dataTypeEnum.float
-              }
         }, {
             id: "new_recovered_percentage",
             dataType: tableau.dataTypeEnum.float
