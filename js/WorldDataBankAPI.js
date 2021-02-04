@@ -38,10 +38,10 @@
             // Iterate over the JSON object
             for (var i = 0, len = feat.length; i < len; i++) {
                 tableData.push({
-                    "countryname": feat.projects[i].countryname,
-                    "regionname": feat.projects[i].regionname,
-                    "projectfinancialtype": feat.projects[i].projectfinancialtype,
-                    "location": feat.projects[i].location
+                    "countryname": feat.countryname,
+                    "regionname": feat.regionname,
+                    "projectfinancialtype": feat.projectfinancialtype,
+                    "location": feat.location
                 });
             }
 
