@@ -32,16 +32,16 @@
     // Download the data
     myConnector.getData = function(table, doneCallback) {
         $.getJSON("https://search.worldbank.org/api/v2/projects?format=json&fl=regionname,countryname,location,projectfinancialtype&source=IBRD&rows=10", function(resp) {
-            var feat = resp.projects,
+            var feat = resp,
                 tableData = [];
 
             // Iterate over the JSON object
             for (var i = 0, len = feat.length; i < len; i++) {
                 tableData.push({
-                    "countryname": feat[i].countryname,
-                    "regionname": feat[i].regionname,
-                    "projectfinancialtype": feat[i].projectfinancialtype,
-                    "location": feat[i].location
+                    "countryname": feat.projects[i].countryname,
+                    "regionname": feat.projects[i].regionname,
+                    "projectfinancialtype": feat.projects[i].projectfinancialtype,
+                    "location": feat.projects[i].location
                 });
             }
 
